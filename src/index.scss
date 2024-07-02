@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Font;
+  font-size: large;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.active{
+  color: rgb(255, 182, 79);
+}
+
+.container{
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(./Fonts/Anton_SC/AntonSC-Regular.ttf);
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+
+  img{
+      width: 300px;
+      height: 200px;
+      border: 2px solid black;
+  }
+}

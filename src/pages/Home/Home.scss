@@ -1,0 +1,22 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 12px;
+    position: relative;
+
+    h1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .item{
+
+        img{
+            cursor: pointer;
+        }
+    }
+}
