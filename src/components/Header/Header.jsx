@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
+import Search from "../Search/Search";
 
 const list = [
   "Africa",
@@ -23,6 +24,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
+      <Search />
     </header>
   );
 };

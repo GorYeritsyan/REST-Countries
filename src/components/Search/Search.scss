@@ -1,0 +1,33 @@
+.input {
+  display: flex;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #1f1f1f;
+    cursor: pointer;
+  }
+
+  input {
+    display: flex;
+    border: 3px solid rgb(255, 214, 157);
+    padding: 5px 35px 5px 10px;
+    outline: none;
+    width: 260px;
+    font-family: Font;
+
+    &:focus {
+      border-color: rgb(255, 182, 79);
+    }
+
+    &::placeholder {
+      font-family: Font;
+    }
+  }
+}
+
+// rgb(255, 182, 79)

@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { fetchOne } from "../../store/slices/countriesSlice";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import './Country.scss'
+import { TiArrowBack } from "react-icons/ti";
+
+import "./Country.scss";
 
 const Country = () => {
   const { name } = useParams();
@@ -12,7 +14,7 @@ const Country = () => {
 
   useEffect(() => {
     dispatch(fetchOne(name));
-  }, []);
+  }, [name]);
 
   const { country, isFetching } = useSelector((state) => state.countriesData);
 
@@ -25,6 +27,12 @@ const Country = () => {
           <div key={el.name.official} className="item">
             <img src={el.flags.png} alt="" />
             <h3>{el.name.common}</h3>
+            <NavLink to="/">
+              <button>
+                <TiArrowBack className="arrow" />
+                <span>Go Back</span>
+              </button>
+            </NavLink>
           </div>
         ))
       )}
