@@ -2,9 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 
 import Home from "./pages/Home/Home";
-import "./App.css";
 import Country from "./pages/Country/Country";
 import Region from "./pages/Region/Region";
+
+import "./App.css";
 
 const App = () => {
   return (

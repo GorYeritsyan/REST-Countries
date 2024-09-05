@@ -9,7 +9,6 @@ import "./Country.scss";
 
 const Country = () => {
   const { name } = useParams();
-  console.log(name);
   const dispatch = useDispatch();
 
   useEffect(() => {
